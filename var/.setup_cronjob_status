@@ -1,0 +1,55 @@
+{
+    "readiness_checks": {
+        "db_write_permission_verified": true
+    },
+    "php_checks": {
+        "php_version_verified": {
+            "responseType": "success",
+            "data": {
+                "required": "7.0.2|7.0.4|~7.0.6|~7.1.0",
+                "current": "7.0.32-0ubuntu0.16.04.1"
+            }
+        },
+        "php_extensions_verified": {
+            "responseType": "success",
+            "data": {
+                "required": [
+                    "ctype",
+                    "gd",
+                    "spl",
+                    "dom",
+                    "simplexml",
+                    "mcrypt",
+                    "bcmath",
+                    "hash",
+                    "curl",
+                    "iconv",
+                    "intl",
+                    "xsl",
+                    "mbstring",
+                    "openssl",
+                    "zip",
+                    "pdo_mysql",
+                    "soap"
+                ],
+                "missing": []
+            }
+        },
+        "php_settings_verified": {
+            "responseType": "success",
+            "data": {
+                "memory_limit": {
+                    "message": "",
+                    "error": false,
+                    "warning": false
+                }
+            }
+        }
+    },
+    "file_paths": {
+        "list": [],
+        "error": "Could not locate magento/magento2-base/composer.json file."
+    },
+    "last_timestamp": 1538071498,
+    "current_timestamp": 1538079162
+}

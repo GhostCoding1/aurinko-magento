@@ -1,0 +1,245 @@
+{
+    "jobs": [
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "setup:module:enable",
+            "params": {
+                "components": [
+                    {
+                        "name": "Piimega_CheckoutFinland",
+                        "isComposerPackage": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:upgrade",
+            "params": []
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        },
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "setup:module:enable",
+            "params": {
+                "components": [
+                    {
+                        "name": "Piimega_CheckoutFinland",
+                        "isComposerPackage": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:upgrade",
+            "params": []
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        },
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "setup:module:enable",
+            "params": {
+                "components": [
+                    {
+                        "name": "Piimega_CheckoutFinland",
+                        "isComposerPackage": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:upgrade",
+            "params": []
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        },
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "setup:module:enable",
+            "params": {
+                "components": [
+                    {
+                        "name": "Piimega_CheckoutFinland",
+                        "isComposerPackage": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:upgrade",
+            "params": []
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        },
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "update",
+            "params": {
+                "components": [
+                    {
+                        "name": "mageplaza/module-smtp",
+                        "version": "1.2.0"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        },
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "update",
+            "params": {
+                "components": [
+                    {
+                        "name": "klarna/m2-checkout",
+                        "version": "6.0.0"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        },
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "update",
+            "params": {
+                "components": [
+                    {
+                        "name": "klarna/m2-checkout",
+                        "version": "6.0.0"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        },
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "update",
+            "params": {
+                "components": [
+                    {
+                        "name": "klarna/m2-checkout",
+                        "version": "6.0.0"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        },
+        {
+            "name": "setup:maintenance:enable",
+            "params": []
+        },
+        {
+            "name": "setup:cache:disable",
+            "params": []
+        },
+        {
+            "name": "update",
+            "params": {
+                "components": [
+                    {
+                        "name": "klarna/m2-checkout",
+                        "version": "6.0.0"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "setup:cache:enable",
+            "params": [
+                "config layout block_html collections reflection db_ddl eav customer_notification config_integration config_integration_api full_page translate config_webservice"
+            ]
+        }
+    ]
+}

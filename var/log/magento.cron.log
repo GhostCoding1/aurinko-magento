@@ -1,0 +1,10 @@
+Ran jobs by schedule.
+Can't create directory /var/www/html/magento4/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy]
+Can't create directory /var/www/html/magento4/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy]
+Can't create directory /var/www/html/magento4/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy]
+Can't create directory /var/www/html/magento4/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy]
+Can't create directory /var/www/html/magento4/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy]
+Can't create directory /var/www/html/magento4/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy]
+Can't create directory /var/www/html/magento4/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy]
+Can't create directory /var/www/html/magento4/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy]
+The directory "/var/www/html/magento4/generated/code/Magento/GroupedProduct/Controller/Adminhtml/Edit/Popup" cannot be deleted Warning!rmdir(/var/www/html/magento4/generated/code/Magento/GroupedProduct/Controller/Adminhtml/Edit/Popup): No such file or directory

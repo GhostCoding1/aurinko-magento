@@ -1,0 +1,64 @@
+[2018-09-29 06:15:50] klarnaDebugLogger.ERROR: Bad Response: Client error: `POST https://api.playground.klarna.com/payments/v1/sessions` resulted in a `401 Unauthorized` response:
+<html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>401 Authorization Re (truncated...)
+ [] []
+[2018-09-29 06:15:50] klarnaDebugLogger.ERROR: {"purchase_country":"FI","purchase_currency":"EUR","locale":"fi-FI","order_amount":1210,"order_tax_amount":234,"order_lines":[{"type":"physical","reference":"12593","name":"Suitsuke Nag Champa Satya sininen 15 g","quantity":1,"product_url":"http:\/\/aurinko.ghostcoding.io\/suitsuke-nag-champa-satya-sininen-15-g.html?___store%5B_data%5D%5Bstore_id%5D=1&___store%5B_data%5D%5Bcode%5D=FI&___store%5B_data%5D%5Bwebsite_id%5D=1&___store%5B_data%5D%5Bgroup_id%5D=1&___store%5B_data%5D%5Bname%5D=Finnish&___store%5B_data%5D%5Bsort_order%5D=0&___store%5B_data%5D%5Bis_active%5D=1&___store%5B_data%5D%5Bavailable_currency_codes%5D%5B0%5D=EUR","image_url":"http:\/\/aurinko.ghostcoding.io\/media\/catalog\/product\/s\/u\/suitsuke_sai_baba_satya_nag_champa_suitsukkeet.jpg","tax_rate":2400,"total_tax_amount":81,"unit_price":420,"total_amount":420},{"type":"shipping_fee","reference":"smartship_PO2103S","name":"Shipping & Handling","quantity":1,"unit_price":790,"tax_rate":2400,"total_amount":790,"total_tax_amount":153}],"merchant_urls":{"confirmation":"https:\/\/aurinko.ghostcoding.io\/checkout\/onepage\/success","notification":"https:\/\/aurinko.ghostcoding.io\/klarna\/api\/notification"}} [] []
+[2018-09-29 06:15:50] klarnaDebugLogger.ERROR: 401 Unauthorized [] []
+[2018-09-29 06:16:14] klarnaDebugLogger.ERROR: Bad Response: Client error: `POST https://api.playground.klarna.com/payments/v1/sessions` resulted in a `401 Unauthorized` response:
+<html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>401 Authorization Re (truncated...)
+ [] []
+[2018-09-29 06:16:14] klarnaDebugLogger.ERROR: {"purchase_country":"FI","purchase_currency":"EUR","locale":"fi-FI","order_amount":1210,"order_tax_amount":234,"order_lines":[{"type":"physical","reference":"12593","name":"Suitsuke Nag Champa Satya sininen 15 g","quantity":1,"product_url":"http:\/\/aurinko.ghostcoding.io\/suitsuke-nag-champa-satya-sininen-15-g.html?___store%5B_data%5D%5Bstore_id%5D=1&___store%5B_data%5D%5Bcode%5D=FI&___store%5B_data%5D%5Bwebsite_id%5D=1&___store%5B_data%5D%5Bgroup_id%5D=1&___store%5B_data%5D%5Bname%5D=Finnish&___store%5B_data%5D%5Bsort_order%5D=0&___store%5B_data%5D%5Bis_active%5D=1&___store%5B_data%5D%5Bavailable_currency_codes%5D%5B0%5D=EUR","image_url":"http:\/\/aurinko.ghostcoding.io\/media\/catalog\/product\/s\/u\/suitsuke_sai_baba_satya_nag_champa_suitsukkeet.jpg","tax_rate":2400,"total_tax_amount":81,"unit_price":420,"total_amount":420},{"type":"shipping_fee","reference":"smartship_PO2103S","name":"Shipping & Handling","quantity":1,"unit_price":790,"tax_rate":2400,"total_amount":790,"total_tax_amount":153}],"merchant_urls":{"confirmation":"https:\/\/aurinko.ghostcoding.io\/checkout\/onepage\/success","notification":"https:\/\/aurinko.ghostcoding.io\/klarna\/api\/notification"}} [] []
+[2018-09-29 06:16:14] klarnaDebugLogger.ERROR: 401 Unauthorized [] []
+[2018-09-29 06:18:37] klarnaDebugLogger.ERROR: Bad Response: Client error: `POST https://api.playground.klarna.com/payments/v1/sessions` resulted in a `401 Unauthorized` response:
+<html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>401 Authorization Re (truncated...)
+ [] []
+[2018-09-29 06:18:37] klarnaDebugLogger.ERROR: {"purchase_country":"FI","purchase_currency":"EUR","locale":"fi-FI","order_amount":1210,"order_tax_amount":234,"order_lines":[{"type":"physical","reference":"12593","name":"Suitsuke Nag Champa Satya sininen 15 g","quantity":1,"product_url":"http:\/\/aurinko.ghostcoding.io\/suitsuke-nag-champa-satya-sininen-15-g.html?___store%5B_data%5D%5Bstore_id%5D=1&___store%5B_data%5D%5Bcode%5D=FI&___store%5B_data%5D%5Bwebsite_id%5D=1&___store%5B_data%5D%5Bgroup_id%5D=1&___store%5B_data%5D%5Bname%5D=Finnish&___store%5B_data%5D%5Bsort_order%5D=0&___store%5B_data%5D%5Bis_active%5D=1&___store%5B_data%5D%5Bavailable_currency_codes%5D%5B0%5D=EUR","image_url":"http:\/\/aurinko.ghostcoding.io\/media\/catalog\/product\/s\/u\/suitsuke_sai_baba_satya_nag_champa_suitsukkeet.jpg","tax_rate":2400,"total_tax_amount":81,"unit_price":420,"total_amount":420},{"type":"shipping_fee","reference":"smartship_PO2103S","name":"Shipping & Handling","quantity":1,"unit_price":790,"tax_rate":2400,"total_amount":790,"total_tax_amount":153}],"merchant_urls":{"confirmation":"https:\/\/aurinko.ghostcoding.io\/checkout\/onepage\/success","notification":"https:\/\/aurinko.ghostcoding.io\/klarna\/api\/notification"}} [] []
+[2018-09-29 06:18:37] klarnaDebugLogger.ERROR: 401 Unauthorized [] []
+[2018-09-29 06:18:42] klarnaDebugLogger.ERROR: Bad Response: Client error: `POST https://api.playground.klarna.com/payments/v1/sessions` resulted in a `401 Unauthorized` response:
+<html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>401 Authorization Re (truncated...)
+ [] []
+[2018-09-29 06:18:42] klarnaDebugLogger.ERROR: {"purchase_country":"FI","purchase_currency":"EUR","locale":"fi-FI","order_amount":1210,"order_tax_amount":234,"order_lines":[{"type":"physical","reference":"12593","name":"Suitsuke Nag Champa Satya sininen 15 g","quantity":1,"product_url":"http:\/\/aurinko.ghostcoding.io\/suitsuke-nag-champa-satya-sininen-15-g.html?___store%5B_data%5D%5Bstore_id%5D=1&___store%5B_data%5D%5Bcode%5D=FI&___store%5B_data%5D%5Bwebsite_id%5D=1&___store%5B_data%5D%5Bgroup_id%5D=1&___store%5B_data%5D%5Bname%5D=Finnish&___store%5B_data%5D%5Bsort_order%5D=0&___store%5B_data%5D%5Bis_active%5D=1&___store%5B_data%5D%5Bavailable_currency_codes%5D%5B0%5D=EUR","image_url":"http:\/\/aurinko.ghostcoding.io\/media\/catalog\/product\/s\/u\/suitsuke_sai_baba_satya_nag_champa_suitsukkeet.jpg","tax_rate":2400,"total_tax_amount":81,"unit_price":420,"total_amount":420},{"type":"shipping_fee","reference":"smartship_PO2103S","name":"Shipping & Handling","quantity":1,"unit_price":790,"tax_rate":2400,"total_amount":790,"total_tax_amount":153}],"merchant_urls":{"confirmation":"https:\/\/aurinko.ghostcoding.io\/checkout\/onepage\/success","notification":"https:\/\/aurinko.ghostcoding.io\/klarna\/api\/notification"}} [] []
+[2018-09-29 06:18:42] klarnaDebugLogger.ERROR: 401 Unauthorized [] []
+[2018-10-06 01:51:47] klarnaDebugLogger.ERROR: Bad Response: Client error: `POST https://api.playground.klarna.com/payments/v1/sessions` resulted in a `401 Unauthorized` response:
+<html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>401 Authorization Re (truncated...)
+ [] []
+[2018-10-06 01:51:47] klarnaDebugLogger.ERROR: {"purchase_country":"FI","purchase_currency":"EUR","locale":"en-US","order_amount":4500,"order_tax_amount":871,"order_lines":[{"type":"physical","reference":"22157","name":"Harem Pants for men","quantity":1,"product_url":"http:\/\/aurinko.ghostcoding.io\/haaremihousut-miehille.html?___store%5B_data%5D%5Bstore_id%5D=2&___store%5B_data%5D%5Bcode%5D=en&___store%5B_data%5D%5Bwebsite_id%5D=1&___store%5B_data%5D%5Bgroup_id%5D=1&___store%5B_data%5D%5Bname%5D=English&___store%5B_data%5D%5Bsort_order%5D=2&___store%5B_data%5D%5Bis_active%5D=1&___store%5B_data%5D%5Bavailable_currency_codes%5D%5B0%5D=EUR&___store%5B_data%5D%5Bbase_currency%5D%5B_data%5D%5Bcurrency_code%5D=EUR&___store%5B_data%5D%5Bcurrent_currency%5D%5B_data%5D%5Bcurrency_code%5D=EUR","image_url":"http:\/\/aurinko.ghostcoding.io\/media\/catalog\/product\/h\/a\/haaremihousut_miehet_ruskea-Aladdin-Afghani-Pants-Aladdin-Afganistani.jpg","tax_rate":2400,"total_tax_amount":871,"unit_price":4500,"total_amount":4500}],"merchant_urls":{"confirmation":"https:\/\/aurinko.ghostcoding.io\/checkout\/onepage\/success","notification":"https:\/\/aurinko.ghostcoding.io\/klarna\/api\/notification"}} [] []
+[2018-10-06 01:51:47] klarnaDebugLogger.ERROR: 401 Unauthorized [] []
+[2018-10-06 01:52:15] klarnaDebugLogger.ERROR: Bad Response: Client error: `POST https://api.playground.klarna.com/payments/v1/sessions` resulted in a `401 Unauthorized` response:
+<html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>401 Authorization Re (truncated...)
+ [] []
+[2018-10-06 01:52:15] klarnaDebugLogger.ERROR: {"purchase_country":"FI","purchase_currency":"EUR","locale":"en-US","order_amount":4500,"order_tax_amount":871,"order_lines":[{"type":"physical","reference":"22157","name":"Harem Pants for men","quantity":1,"product_url":"http:\/\/aurinko.ghostcoding.io\/haaremihousut-miehille.html?___store%5B_data%5D%5Bstore_id%5D=2&___store%5B_data%5D%5Bcode%5D=en&___store%5B_data%5D%5Bwebsite_id%5D=1&___store%5B_data%5D%5Bgroup_id%5D=1&___store%5B_data%5D%5Bname%5D=English&___store%5B_data%5D%5Bsort_order%5D=2&___store%5B_data%5D%5Bis_active%5D=1&___store%5B_data%5D%5Bavailable_currency_codes%5D%5B0%5D=EUR","image_url":"http:\/\/aurinko.ghostcoding.io\/media\/catalog\/product\/h\/a\/haaremihousut_miehet_ruskea-Aladdin-Afghani-Pants-Aladdin-Afganistani.jpg","tax_rate":2400,"total_tax_amount":871,"unit_price":4500,"total_amount":4500}],"merchant_urls":{"confirmation":"https:\/\/aurinko.ghostcoding.io\/checkout\/onepage\/success","notification":"https:\/\/aurinko.ghostcoding.io\/klarna\/api\/notification"}} [] []
+[2018-10-06 01:52:15] klarnaDebugLogger.ERROR: 401 Unauthorized [] []
+[2018-10-06 02:00:18] klarnaDebugLogger.ERROR: Bad Response: Client error: `POST https://api.playground.klarna.com/payments/v1/sessions` resulted in a `401 Unauthorized` response:
+<html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>401 Authorization Re (truncated...)
+ [] []
+[2018-10-06 02:00:18] klarnaDebugLogger.ERROR: {"purchase_country":"FI","purchase_currency":"EUR","locale":"en-US","order_amount":4500,"order_tax_amount":871,"order_lines":[{"type":"physical","reference":"22157","name":"Harem Pants for men","quantity":1,"product_url":"http:\/\/aurinko.ghostcoding.io\/haaremihousut-miehille.html?___store%5B_data%5D%5Bstore_id%5D=2&___store%5B_data%5D%5Bcode%5D=en&___store%5B_data%5D%5Bwebsite_id%5D=1&___store%5B_data%5D%5Bgroup_id%5D=1&___store%5B_data%5D%5Bname%5D=English&___store%5B_data%5D%5Bsort_order%5D=2&___store%5B_data%5D%5Bis_active%5D=1&___store%5B_data%5D%5Bavailable_currency_codes%5D%5B0%5D=EUR","image_url":"http:\/\/aurinko.ghostcoding.io\/media\/catalog\/product\/h\/a\/haaremihousut_miehet_ruskea-Aladdin-Afghani-Pants-Aladdin-Afganistani.jpg","tax_rate":2400,"total_tax_amount":871,"unit_price":4500,"total_amount":4500}],"merchant_urls":{"confirmation":"https:\/\/aurinko.ghostcoding.io\/checkout\/onepage\/success","notification":"https:\/\/aurinko.ghostcoding.io\/klarna\/api\/notification"}} [] []
+[2018-10-06 02:00:18] klarnaDebugLogger.ERROR: 401 Unauthorized [] []
+[2018-10-06 02:00:26] klarnaDebugLogger.ERROR: Bad Response: Client error: `POST https://api.playground.klarna.com/payments/v1/sessions` resulted in a `401 Unauthorized` response:
+<html>
+<head><title>401 Authorization Required</title></head>
+<body bgcolor="white">
+<center><h1>401 Authorization Re (truncated...)
+ [] []
+[2018-10-06 02:00:26] klarnaDebugLogger.ERROR: {"purchase_country":"FI","purchase_currency":"EUR","locale":"en-US","order_amount":4500,"order_tax_amount":871,"order_lines":[{"type":"physical","reference":"22157","name":"Harem Pants for men","quantity":1,"product_url":"http:\/\/aurinko.ghostcoding.io\/haaremihousut-miehille.html?___store%5B_data%5D%5Bstore_id%5D=2&___store%5B_data%5D%5Bcode%5D=en&___store%5B_data%5D%5Bwebsite_id%5D=1&___store%5B_data%5D%5Bgroup_id%5D=1&___store%5B_data%5D%5Bname%5D=English&___store%5B_data%5D%5Bsort_order%5D=2&___store%5B_data%5D%5Bis_active%5D=1&___store%5B_data%5D%5Bavailable_currency_codes%5D%5B0%5D=EUR","image_url":"http:\/\/aurinko.ghostcoding.io\/media\/catalog\/product\/h\/a\/haaremihousut_miehet_ruskea-Aladdin-Afghani-Pants-Aladdin-Afganistani.jpg","tax_rate":2400,"total_tax_amount":871,"unit_price":4500,"total_amount":4500}],"merchant_urls":{"confirmation":"https:\/\/aurinko.ghostcoding.io\/checkout\/onepage\/success","notification":"https:\/\/aurinko.ghostcoding.io\/klarna\/api\/notification"}} [] []
+[2018-10-06 02:00:26] klarnaDebugLogger.ERROR: 401 Unauthorized [] []

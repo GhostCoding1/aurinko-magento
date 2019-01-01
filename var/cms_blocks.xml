@@ -1,0 +1,536 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <item>
+      <title><![CDATA[Footer Static]]></title>
+      <identifier><![CDATA[footer_static]]></identifier>
+      <content><![CDATA[<div class="footer-static">
+<div class="row">
+<div class="col-xs-12 col-sm-3 col-md-3">
+<div class="footer-links">
+<h2 class="title">Customer Services</h2>
+<ul>
+<li><a href="#">FAQs</a></li>
+<li><a href="#">Shipping</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Custom link</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3">
+<div class="footer-links">
+<h2 class="title">Social Media</h2>
+<ul class="link-follow">
+<li class="first"><a class="twitter fa fa-twitter" href="#"><span>Twitter</span></a></li>
+<li><a class="facebook fa fa-facebook" href="#"><span>Facebook</span></a></li>
+<li><a class="google fa fa-google-plus" href="#"><span>Google</span></a></li>
+<li><a class="instagramfa fa-instagram" href="#"><span>Instagram</span></a></li>
+<li><a class="pinterest fa fa-pinterest" href="#"><span>Pinterest</span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3">
+<div class="footer-links">
+<h2 class="title">Profile</h2>
+<ul>
+<li><a href="#">My Account</a></li>
+<li><a href="#">Checkout</a></li>
+<li><a href="#">Order Tracking</a></li>
+<li><a href="#">Help &amp; Support</a></li>
+<li><a href="#">Custom link</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3">
+<div class="footer-links contacts">
+<h2 class="title">Contact</h2>
+<div class="footer-link-contact">
+<ul class="ft-contactus">
+<li class="address">1234 Heaven Stress, Beverly Hill.</li>
+<li class="phone">Telephone: +01 234 567 89</li>
+<li class="email">Email: info@thebuesky.com</li>
+<li class="time">8:00 - 19:00, Monday - Saturday</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Home 2, 5 - Banner Middle]]></title>
+      <identifier><![CDATA[banner_middle]]></identifier>
+      <content><![CDATA[<div class="bs-banner">
+<p><img src="{{media url="wysiwyg/banner_middle.png"}}" alt="" /></p>
+<div class="bs-banner-text">
+<h3>Treat yourself with 20% off your Cogito orders!</h3>
+<h3>Enter “TREATME” at the checkout!</h3>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[2]]></id>
+        <id><![CDATA[7]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Top link]]></title>
+      <identifier><![CDATA[top_header]]></identifier>
+      <content><![CDATA[<div class="address">
+7563 St. Vicent Place, Glasgo
+</div>
+<div class="phone">
++777 2345 7885 | +777 2345 7886
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Payment photo]]></title>
+      <identifier><![CDATA[payment_photo]]></identifier>
+      <content><![CDATA[<img src="{{media url="wysiwyg/payment.png"}}" alt="" />]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Custom Link Before]]></title>
+      <identifier><![CDATA[menu_custom_links_before]]></identifier>
+      <content><![CDATA[<ul>
+<li class="ui-menu-item level0"><a href="{{store url=''}}" class="level-top"><span>Home</span></a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Custom Link]]></title>
+      <identifier><![CDATA[menu_custom_links]]></identifier>
+      <content><![CDATA[<ul>
+<li class="ui-menu-item level0 classic parent ">
+<div class="open-children-toggle"></div>
+<a class="level-top" href="javascript:void(0)"> <span>Pages</span> </a>
+<div class="level0 submenu">
+<div class="row">
+<ul class="subchildmenu ">
+<li class="ui-menu-item level1 "><a href="{{store url='rokanthemes-brand.html'}}"> <span>Brands</span> </a></li>
+<li class="ui-menu-item level1 "><a href="{{store url='about-us'}}"> <span>About Us</span> </a></li>
+<li class="ui-menu-item level1"><a href="{{store url='contact'}}"><span>Contact Us</span></a></li>
+<li class="ui-menu-item level1 "><a href="{{store url='privacy-policy-cookie-restriction-mode'}}"> <span>Privacy Policy</span> </a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="ui-menu-item level0"><a class="level-top" href="{{store url='blog'}}"><span>Blog</span></a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Box sale]]></title>
+      <identifier><![CDATA[box_sale]]></identifier>
+      <content><![CDATA[<div class="row">
+<div class="introduction-box col-md-4 col-sm-4 col-xs-12">
+<h2>flash sale – $10 items</h2>
+<p>ends 5/29 11:59PM PST | shop now
+</p></div>
+<div class="introduction-box col-md-4 col-sm-4 col-xs-12">
+<h2>flash sale – $17 items</h2>
+<p>ends 5/20 11:59PM PST | shop now
+</p></div>
+<div class="introduction-box col-md-4 col-sm-4 col-xs-12">
+<h2>free shipping. no minimum</h2>
+<p>on all orders to france
+</p></div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Section services]]></title>
+      <identifier><![CDATA[section_services]]></identifier>
+      <content><![CDATA[<div class="row">
+<div class="col-sm-3 col-xs-6">
+<div class="support-info money-back">
+<div class="info-title">Money back guarantee</div>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="support-info online-support">
+<div class="info-title">Online support 24/7</div>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="support-info fast-shipping">
+<div class="info-title">Fast shipping</div>
+</div>
+</div>
+<div class="col-sm-3 col-xs-6">
+<div class="support-info product-quality">
+<div class="info-title">Product quality guarantee</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Section brands]]></title>
+      <identifier><![CDATA[section_brands]]></identifier>
+      <content><![CDATA[<div class="rokan-product-heading rokan-brands-heading">
+<h2>Brands</h2>
+</div>
+<div>{{widget type="Rokanthemes\Brand\Block\Widget\Brandlist" show_brand_name="0" brand_groups="1,2" number_item="12" default_item="5" destop_item="5" small_destop_item="4" tablet_item="3" mobile_item="2" show_next_back_control="1" show_navigation_control="0" auto_play_control="1"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Home 3 - Banner Middle]]></title>
+      <identifier><![CDATA[banner_middle]]></identifier>
+      <content><![CDATA[<div class="col-banner-middle">
+<div class="wrapper-banner-middle">
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-4">
+<div class="banner-top banner-top1">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/home3/banner311.jpg"}}" /></a>
+<div class="bs-banner-text">
+<h3>Must-have</h3>
+<p>No un-boring wardrobe</p>
+<a class="view-collection">Shop now</a></div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4">
+<div class="banner-top banner-top1">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/home3/banner312.jpg"}}" /></a>
+<div class="bs-banner-text">
+<h3>Waistcoat</h3>
+<p>Looking for a new style?</p>
+<a class="view-collection">Shop now</a></div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4">
+<div class="banner-top banner-top1">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/home3/banner313.jpg"}}" /></a>
+<div class="bs-banner-text">
+<h3>Outfits</h3>
+<p>For any occasion</p>
+<a class="view-collection">Shop now</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[6]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Banner contact]]></title>
+      <identifier><![CDATA[contact-us]]></identifier>
+      <content><![CDATA[<img src="{{media url="wysiwyg/banner_contact.jpg"}}" alt="" />]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Contact Us Info]]></title>
+      <identifier><![CDATA[contact-info]]></identifier>
+      <content><![CDATA[<h3>Get office info.</h3>
+<div class="short-des">
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+</div>
+<ul>
+<li class="address">
+<h4>Our Address</h4>
+<p>1234 Heaven Stress, Beverly Hill.</p>
+</li>
+<li class="phone">
+<h4>Phone Number</h4>
+<p>Office: (800) 123 456 789 </p>
+</li>
+<li class="email">
+<h4>Email address</h4>
+<p>Email: Erentheme@gmail.com</p>
+<p>Support: Erentheme@gmail.com </p>
+</li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Contact Maps]]></title>
+      <identifier><![CDATA[maps]]></identifier>
+      <content><![CDATA[<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24201.246844804893!2d-111.94405300000001!3d40.692565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90cf6256d98a62eb!2sValley+Fair+Mall!5e0!3m2!1sen!2sus!4v1487152442332" width="1920" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Banner Top]]></title>
+      <identifier><![CDATA[banner_top]]></identifier>
+      <content><![CDATA[<div class="row">
+<div class="col-md-8 col-sm-8 col-xs-12 col-md-offset-2 col-sm-offset-2 col-banner-top">
+<div class="wrapper-banner-top">
+<div class="row-banner-top">
+<div class="col-sm-6 banner-top-left">
+<div class="banner-top banner-top1">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/home2/banner211.jpg"}}" /></a>
+<div class="bs-banner-text">
+<h3>Waistcoat</h3>
+<p>Looking for a new style?</p>
+<a class="view-collection">Shop now</a></div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 banner-top-right">
+<div class="banner-top banner-top1">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/home2/banner212.jpg"}}" /></a>
+<div class="bs-banner-text">
+<h3>Rainy days</h3>
+<p>Stay fashionable</p>
+<a class="view-collection">Shop now</a></div>
+</div>
+</div>
+<div class="banner-top banner-top1">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/home2/banner213.jpg"}}" /></a>
+<div class="bs-banner-text">
+<h3>Bags</h3>
+<p>Be coloured</p>
+<a class="view-collection">Shop now</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[1]]></id>
+        <id><![CDATA[2]]></id>
+        <id><![CDATA[4]]></id>
+        <id><![CDATA[6]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Section newsletter content]]></title>
+      <identifier><![CDATA[section_content_newsletter]]></identifier>
+      <content><![CDATA[<h2>GET 10% OFF BY SUBSCRIBING COGITO NEWSLETTER</h2>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Social footer]]></title>
+      <identifier><![CDATA[social-footer]]></identifier>
+      <content><![CDATA[<ul class="link-follow">
+<li class="first"><a class="twitter fa fa-twitter" href="#"><span>Twitter</span></a></li>
+<li><a class="facebook fa fa-facebook" href="#"><span>Facebook</span></a></li>
+<li><a class="google fa fa-google-plus" href="#"><span>Google</span></a></li>
+<li><a class="instagram fa fa-instagram" href="#"><span>Instagram</span></a></li>
+<li><a class="pinterest fa fa-pinterest" href="#"><span>Pinterest</span></a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Instagram]]></title>
+      <identifier><![CDATA[instagram]]></identifier>
+      <content><![CDATA[{{widget type="Rokanthemes\Instagram\Block\Widget\Instagram" title="Instagram" numberimage="5"}}]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Home page section text middle ]]></title>
+      <identifier><![CDATA[section_text_middle]]></identifier>
+      <content><![CDATA[<p>Treat yourself with 20% off your Cogito orders! Enter “TREATME” at the checkout!</p>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Home 4 - Banner Middle ]]></title>
+      <identifier><![CDATA[banner_middle]]></identifier>
+      <content><![CDATA[<div class="col-banner-middle">
+<div class="wrapper-banner-middle">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="banner-top banner-top1">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/home4/banner411.jpg"}}" /></a>
+<div class="bs-banner-text">
+<h3>Outfits</h3>
+<p>for any occasion</p>
+<a class="view-collection">Shop now</a></div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="banner-top banner-top1">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/home4/banner412.jpg"}}" /></a>
+<div class="bs-banner-text">
+<h3>Made for sun</h3>
+<p>let’s Beat the summer heat</p>
+<a class="view-collection">Shop now</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[4]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Footer menu ]]></title>
+      <identifier><![CDATA[footer-menu]]></identifier>
+      <content><![CDATA[<ul>
+<li><a href="#">FQA</a></li>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Shipping</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">Contact</a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[0]]></id>
+      </store_id>
+    </item>
+    <item>
+      <title><![CDATA[Banner Top]]></title>
+      <identifier><![CDATA[banner_top]]></identifier>
+      <content><![CDATA[	<div class="col-banner-top">
+		<div class="wrapper-banner-top">
+			<div class="row-banner-top">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-7 banner-top-left">
+							<div class="banner-top banner-top1">
+								<div class="bs-banner">
+									<a href="#"><img src="{{media url="wysiwyg/home5/banner51-1.jpg"}}" alt="" /></a>
+									<div class="bs-banner-text">
+										<h3>Waistcoat</h3>
+										<p>#swim short, bikini, scarf, tunic…</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5 banner-top-right">
+							<div class="banner-top banner-top1">
+								<div class="bs-banner">
+									<a href="#"><img src="{{media url="wysiwyg/home5/banner51-2.jpg"}}" alt="" /></a>
+									<div class="bs-banner-text">
+										<h3>Women</h3>
+										<p>#swim short, bikini, scarf, tunic…</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-5 banner-top-left">
+							<div class="banner-top banner-top1">
+								<div class="bs-banner">
+									<a href="#"><img src="{{media url="wysiwyg/home5/banner51-3.jpg"}}" alt="" /></a>
+									<div class="bs-banner-text">
+										<h3>Accessories</h3>
+										<p>#swim short, bikini, scarf, tunic…</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-7 banner-top-right">
+							<div class="banner-top banner-top1">
+								<div class="bs-banner">
+									<a href="#"><img src="{{media url="wysiwyg/home5/banner51-4.jpg"}}" alt="" /></a>
+									<div class="bs-banner-text">
+										<h3>Rainy days</h3>
+										<p>#swim short, bikini, scarf, tunic…</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-4 banner-top-left">
+							<div class="banner-top banner-top1">
+								<div class="bs-banner">
+									<a href="#"><img src="{{media url="wysiwyg/home5/banner51-5.jpg"}}" alt="" /></a>
+									<div class="bs-banner-text">
+										<h3>Shoes</h3>
+										<p>#swim short, bikini, scarf, tunic…</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 banner-top-center">
+							<div class="banner-top banner-top1">
+								<div class="bs-banner">
+									<a href="#"><img src="{{media url="wysiwyg/home5/banner51-6.jpg"}}" alt="" /></a>
+									<div class="bs-banner-text">
+										<h3>Men</h3>
+										<p>#swim short, bikini, scarf, tunic…</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 banner-top-right">
+							<div class="banner-top banner-top1">
+								<div class="bs-banner">
+									<a href="#"><img src="{{media url="wysiwyg/home5/banner51-7.jpg"}}" alt="" /></a>
+									<div class="bs-banner-text">
+										<h3>Girl</h3>
+										<p>#swim short, bikini, scarf, tunic…</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+      <store_id>
+        <id><![CDATA[7]]></id>
+      </store_id>
+    </item>
+  </blocks>
+</root>

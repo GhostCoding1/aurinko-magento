@@ -1,0 +1,18 @@
+#checkout-finland-form {
+  margin: 0 0 20px;
+}
+#checkout-finland-form select {
+  max-width: 300px;
+}
+.cf-description {
+  line-height: 38px;
+}
+.cf-description .cf-logo {
+  display: inline-block;
+  float: left;
+  width: 38px;
+  height: 38px;
+  margin-right: 5px;
+  background: url('../images/logo.png') no-repeat center;
+  background-size: 38px 38px;
+}
