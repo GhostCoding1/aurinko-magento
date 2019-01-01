@@ -1,0 +1,37 @@
+<div id="back-top" class="hidden-xs"><i class="fa fa-long-arrow-up"></i></div>
+<div class="footer-container text-center">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="footer-menu">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-menu')->toHtml(); ?>
+					</div>
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('social-footer')->toHtml(); ?>
+					<div class="section-newsletter">
+						<div class="container">
+							<?php echo $block->getLayout()->createBlock('Magento\Newsletter\Block\Subscribe')->setTemplate('Magento_Newsletter::subscribe.phtml')->toHtml();?> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 ">
+					<div class="payment-logo">
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('payment_photo')->toHtml(); ?>
+					</div>
+					<?php echo $this->getChildHtml("copyright"); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	window.onload = function () {
+		document.body.className += " preloaded";
+	}
+</script>

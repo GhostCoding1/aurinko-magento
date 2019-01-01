@@ -1,0 +1,44 @@
+<!-- ko if: agentsAvailable()  -->
+  <div class="step-title" data-bind="i18n: 'Pickup location'" data-role="title"></div>
+
+  <div class="smartship-agent-search-postcode">
+    <label data-bind="i18n: 'Postcode'"></label>
+    <input type="text" data-bind="value: searchPostcode, valueUpdate: 'keyup'" />
+    <!-- ko ifnot: validSearchPostcode -->
+      <span class="error" data-bind="i18n: 'Enter postcode in format XXXXX (e.g. 00100)'"></span>
+    <!-- /ko -->
+  </div>
+
+  <!-- ko ifnot: agentsLoading() -->
+    <table class="table-checkout-shipping-method table-smartship-agent-search">
+      <tbody>
+        <!--ko foreach: { data: displayAgents(), as: 'agent'}-->
+          <tr class="row">
+            <td class="col">
+              <input name="smartship_agent_id" type="radio" data-bind="attr: {'id': 'smartship-agent-' + agent.id}, value: agent.id, checked: $parent.selectedAgentId" />
+            </td>
+            <td class="col">
+              <label data-bind="attr: {'for': 'smartship-agent-' + agent.id}" class="smartship-agent">
+                <div class="smartship-agent-info">
+                  <div data-bind="text: agent.name"></div>
+                  <div class="smartship-agent-address">
+                    <span data-bind="text: agent.address"></span>,
+                    <span data-bind="text: agent.postcode"></span>&nbsp;<span data-bind="text: agent.city"></span>
+                  </div>
+                </div>
+              </label>
+            </td>
+          </tr>
+        <!-- /ko -->
+      </tbody>
+    </table>
+
+    <!-- ko if: (maxResults() < agents().length) -->
+      <a href="#" data-bind="click: displayMore, i18n: 'Show more'"></a>
+    <!-- /ko -->
+  <!-- /ko -->
+
+  <!-- ko if: agentsLoading() -->
+    <p class="smartship-agent-search-loading" data-bind="i18n: 'Loading pickup locations...'"></p>
+  <!-- /ko -->
+<!-- /ko -->

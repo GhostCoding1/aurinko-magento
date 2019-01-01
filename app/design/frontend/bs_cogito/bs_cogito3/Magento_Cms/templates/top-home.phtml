@@ -1,0 +1,33 @@
+<div class="top-content-home">
+	<div class="box-trending">
+		<div class="container">
+			<?php echo $block->getLayout()->createBlock('Rokanthemes\Featuredpro\Block\Featured')->setTemplate('Rokanthemes_Featuredpro::featured.phtml')->toHtml();?>  
+		</div>
+	</div>
+
+	<div class="box-new">
+		<div class="container">
+			<?php echo $block->getLayout()->createBlock('Rokanthemes\Newproduct\Block\Newproduct')->setTemplate('Rokanthemes_Newproduct::newproduct.phtml')->toHtml();?>  
+		</div>
+	</div>
+
+	<div class="section-brands">
+		<div class="container">
+			<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('section_brands')->toHtml(); ?>
+		</div>
+	</div>
+
+	<div class="box-banner-middle">
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_middle')->toHtml(); ?>
+	</div>
+
+	<div class="section-instagram">
+		<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('instagram')->toHtml(); ?>
+	</div>
+
+	<div class="section-services">
+		<div class="container">
+			<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('section_services')->toHtml(); ?>
+		</div>
+	</div>
+</div>

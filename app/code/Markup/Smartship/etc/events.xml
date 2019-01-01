@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="checkout_submit_all_after">
+        <observer name="markup_smartship_save_agent_id" instance="Markup\Smartship\Observer\SaveAgentToOrderObserver"/>
+    </event>
+    <event name="admin_system_config_changed_section_carriers">
+        <observer name="markup_smartship_config_changed" instance="Markup\Smartship\Observer\ConfigObserver"/>
+    </event>
+    <event name="email_order_set_template_vars_before">
+        <observer name="markup_smartship_set_email_variables" instance="Markup\Smartship\Observer\SetEmailVariables" />
+    </event>
+</config>

@@ -1,0 +1,32 @@
+<?php
+// @codingStandardsIgnoreFile
+/**
+ * @var $block \Piimega\CheckoutFinland\Block\Methods\Checkoutfinland
+ */
+?>
+<div class="checkoutfinland-wrap">
+    <div class="C1-container">
+        <?php if(!empty($methods = $block->getMethods())): ?>
+            <?php foreach($methods as $method): ?>
+                <?php $attributes = $method['@attributes'] ?>
+                <?php if(isset($attributes['url']) && isset($attributes['name']) && isset($attributes['icon'])): ?>
+                    <?php unset($method['@attributes']) ?>
+                    <div class='C1'>
+                        <form action='<?php echo $block->escapeUrl($attributes['url']) ?>' method='post'>
+                            <?php foreach($method as $key => $value):?>
+                                <input type='hidden' name='<?php echo $block->escapeHtml($key) ?>' value='<?php echo $block->escapeHtml(!empty($value) ? $value : '') ?>'>
+                            <?php endforeach;?>
+                            <span><input type='image' src='<?php echo $block->escapeHtml($attributes['icon']) ?>'></span>
+                            <div><?php echo $block->escapeHtml($attributes['name']); ?></div>
+                        </form>
+                    </div>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p><?php /* @escapeNotVerified */ echo __('There are no payment methods available at the moment'); ?></p>
+        <?php endif; ?>
+    </div>
+    <div class="C1-actions">
+        <a href="<?php echo $this->getCancelUrl() ?>"><?php /* @escapeNotVerified */ echo __('Cancel payment') ?></a>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Piimega\CheckoutFinland\Logger\Handler\Error">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Piimega\CheckoutFinland\Logger\Handler\Request">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Piimega\CheckoutFinland\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">CheckoutFinlandLogger</argument>
+            <argument name="customHandlers"  xsi:type="array">
+                <item name="cf" xsi:type="object" shared="true">Piimega\CheckoutFinland\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Piimega\CheckoutFinland\Model\Config\Source\Payment\Methods" shared="true"/>
+</config>

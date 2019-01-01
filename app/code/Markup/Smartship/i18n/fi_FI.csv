@@ -1,0 +1,59 @@
+Country (ISO code),Country (ISO code)
+Maximum Weight (kg),Maximum Weight (kg)
+Cost,Cost
+No packages for request,No packages for request
+Postipaketti,Postipaketti
+Kotipaketti,Kotipaketti
+Express,Express
+Pikkupaketti,Pikkupaketti
+Parcel Connect,Parcel Connect
+Priority Parcel,Priority Parcel
+EMS,EMS
+Pickup Location,Noutopiste
+Pickup location,Noutopiste
+Postcode,Postinumero
+Enter postcode in format XXXXX (e.g. 00100),Syötä postinumero muodossa XXXXX (esim. 00100)
+Show more,Näytä lisää
+Loading pickup locations...,Ladataan noutopisteitä…
+Field ,Field 
+ is required., is required.
+Posti SmartShip,Posti SmartShip
+Enabled for Checkout,Enabled for Checkout
+Customer Number,Customer Number
+API Key,API Key
+Mode,Mode
+Package Contents,Package Contents
+Send SmartShip Pre-notification,Send SmartShip Pre-notification
+Print Return Labels,Print Return Labels
+Print Return Labels For,Print Return Labels For
+Postipaketti Title,Postipaketti Title
+Postipaketti Enabled for Checkout,Postipaketti Enabled for Checkout
+Postipaketti Pricing,Postipaketti Pricing
+Postipaketti Free Shipping Amount Threshold,Postipaketti Free Shipping Amount Threshold
+Kotipaketti Title,Kotipaketti Title
+Kotipaketti Enabled for Checkout,Kotipaketti Enabled for Checkout
+Kotipaketti Pricing,Kotipaketti Pricing
+Kotipaketti Free Shipping Amount Threshold,Kotipaketti Free Shipping Amount Threshold
+Express Title,Express Title
+Express Enabled for Checkout,Express Enabled for Checkout
+Express Pricing,Express Pricing
+Express Free Shipping Amount Threshold,Express Free Shipping Amount Threshold
+Pikkupaketti Title,Pikkupaketti Title
+Pikkupaketti Enabled for Checkout,Pikkupaketti Enabled for Checkout
+Pikkupaketti Pricing,Pikkupaketti Pricing
+Pikkupaketti Free Shipping Amount Threshold,Pikkupaketti Free Shipping Amount Threshold
+Parcel Connect Title,Parcel Connect Title
+Parcel Connect Enabled for Checkout,Parcel Connect Enabled for Checkout
+Parcel Connect Pricing,Parcel Connect Pricing
+Parcel Connect Free Shipping Amount Threshold,Parcel Connect Free Shipping Amount Threshold
+Priority Parcel Title,Priority Parcel Title
+Priority Parcel Enabled for Checkout,Priority Parcel Enabled for Checkout
+Priority Parcel Pricing,Priority Parcel Pricing
+Priority Parcel Free Shipping Amount Threshold,Priority Parcel Free Shipping Amount Threshold
+EMS Title,EMS Title
+EMS Enabled for Checkout,EMS Enabled for Checkout
+EMS Pricing,EMS Pricing
+EMS Free Shipping Amount Threshold,EMS Free Shipping Amount Threshold
+Displayed Error Message,Displayed Error Message
+Show Method if Not Applicable,Show Method if Not Applicable
+Sort Order,Sort Order

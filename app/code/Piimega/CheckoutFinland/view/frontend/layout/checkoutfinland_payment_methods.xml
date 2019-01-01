@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Checkout Finland</title>
+        <css src="Piimega_CheckoutFinland::css/styles.css"/>
+    </head>
+    <body>
+        <referenceContainer name="main">
+            <block class="Piimega\CheckoutFinland\Block\Methods\Checkoutfinland" name="checkoutfinland.payment.methods" template="Piimega_CheckoutFinland::methods/checkoutfinland.phtml" cacheable="false"/>
+        </referenceContainer>
+        <referenceContainer name="page.messages">
+            <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,19 @@
+.order-view-smartship-agent {
+  margin-top: -3.5rem;
+}
+
+.smartship-agent-modal span.error {
+  color: #626262;
+  font-size: 0.9em;
+}
+
+.smartship-agent-modal select {
+  margin-top: 1em;
+}
+
+.smartship-agent-modal .loading {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/ajax-loader.gif") no-repeat top left;
+}

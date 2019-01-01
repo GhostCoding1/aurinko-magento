@@ -1,0 +1,53 @@
+/**
+ * Field for postcode search
+ */
+
+.smartship-agent-search-postcode {
+  margin-top: 20px;
+  margin: 20px 0 10px;
+}
+
+.smartship-agent-search-postcode label {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.smartship-agent-search-postcode input[type="text"] {
+  display: inline-block;
+  width: 120px;
+  margin-right: 5px;
+}
+
+.smartship-agent-search-postcode span.error {
+  display: inline-block;
+  color: #626262;
+  font-size: 0.9em;
+}
+
+/**
+ * Agents table
+ */
+
+.table-smartship-agent-search tbody td {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.table-smartship-agent-search td input[type="radio"] {
+  margin: 0 5px 0 0;
+  height: 40px;
+}
+
+.table-smartship-agent-search td label.smartship-agent {
+  white-space: nowrap;
+}
+
+.table-smartship-agent-search .smartship-agent-info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.table-smartship-agent-search .smartship-agent-address {
+  font-size: 0.9em;
+  color: #626262;
+}

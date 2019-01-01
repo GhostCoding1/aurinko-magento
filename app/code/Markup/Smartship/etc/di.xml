@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <preference for="Markup\Smartship\Api\AgentsInterface" type="Markup\Smartship\Model\Agents" />
+
+  <preference for="Markup\Smartship\Api\Data\SmartshipAgentInterface" type="Markup\Smartship\Model\Order\SmartshipAgent" />
+
+  <type name="Magento\Checkout\Model\ShippingInformationManagement">
+    <plugin name="markup_smartship_save_agent_id" type="Markup\Smartship\Plugin\Checkout\Model\ShippingInformationManagement" sortOrder="1"/>
+  </type>
+
+  <type name="Magento\Sales\Api\OrderRepositoryInterface">
+    <plugin name="get_smartship_agent" type="Markup\Smartship\Plugin\Model\Order\OrderGet"/>
+  </type>
+</config>

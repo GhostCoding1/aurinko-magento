@@ -1,0 +1,60 @@
+<?php
+$_brandCollection       = $block->getBrandCollection();
+$_helper                = $this->helper('Rokanthemes\Brand\Helper\Data');
+$title                  = $this->getConfig('widget_title');
+$show_brand_name        = $this->getConfig('show_brand_name');
+$blockId = strtotime('now');
+$i=0;
+$rows = $this->getConfig('col_rows');
+if($rows == '' || $rows == 0){
+	$rows = 1;
+}
+?>
+
+<?php if ( $_brandCollection->count() ){ ?>
+<div class="block-widget-rokanthemes-brand">
+	<?php if($title){ ?>
+	<div class="block-title"><strong><?php echo $title ?></strong></div>
+	<?php } ?>
+	<div class="block-content brandowl-play">
+		<ul id="rokanthemes-carousel<?php echo $blockId; ?>">
+			<?php foreach ($_brandCollection as $_brand) { ?>
+				<?php if($i %$rows == 0){ ?>
+				<li class="item">
+				<?php } ?>
+					<div class="brand-item">
+						<div class="brand-image"><a href="<?php echo $_brand->getUrl(); ?>" title="<?php echo $_brand->getName(); ?>"><img src="<?php echo $_brand->getThumbnailUrl(); ?>" alt="<?php echo $_brand->getName(); ?>"/></a></div>
+						<?php if($show_brand_name){ ?>
+						<div class="brand-name"><a href="<?php echo $_brand->getUrl(); ?>" title="<?php echo $_brand->getName(); ?>"><?php echo $_brand->getName() ?></a></div>
+						<?php } ?>
+					</div>
+				<?php $i++;?>
+				<?php if($i % $rows == 0){ ?>
+				</li>
+				<?php } ?>
+			<?php } ?>
+			<?php if($i % $rows != 0) echo "</li>"; ?>
+		</ul>
+	</div>
+</div>
+<script>
+	require([
+		'jquery',
+		'mage/mage',
+		'rokanthemes/owl'
+	], function ($) {
+		'use strict';
+
+		jQuery("#rokanthemes-carousel<?php echo $blockId; ?>").owlCarousel({
+			autoPlay : <?php echo ($this->getConfig('auto_play_control')) ? 'true' : 'false';?>,
+			items : <?php echo $this->getConfig('default_item');?>,
+			itemsDesktop : [1199,<?php echo $this->getConfig('destop_item');?>],
+			itemsDesktopSmall : [980,<?php echo $this->getConfig('small_destop_item');?>],
+			itemsTablet: [768,<?php echo $this->getConfig('tablet_item');?>],
+			itemsMobile : [479,<?php echo $this->getConfig('mobile_item');?>],
+			navigation : <?php echo ($this->getConfig('show_next_back_control')) ? 'true' : 'false';?>,
+			pagination : <?php echo ($this->getConfig('show_navigation_control')) ? 'true' : 'false';?>,
+		});
+	});
+</script>
+<?php } ?>

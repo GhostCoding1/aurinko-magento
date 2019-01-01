@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Blueskytechco
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Blueskytechco.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.blueskytechco.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Blueskytechco
+ * @package    Rokanthemes_Brand
+ * @copyright  Copyright (c) 2014 Blueskytechco (http://www.blueskytechco.com/)
+ * @license    http://www.blueskytechco.com/LICENSE-1.0.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+	<menu>
+		<add id="Rokanthemes_Brand::brand" title="Brand" module="Rokanthemes_Brand" sortOrder="40" resource="Rokanthemes_Brand::brand" parent="Rokanthemes_RokanBase::rokanbase"/>  
+		<add id="Rokanthemes_Brand::brand_manage" title="Manage Brands" module="Rokanthemes_Brand" sortOrder="20" parent="Rokanthemes_Brand::brand" action="rokanthemesbrand/brand/index" resource="Rokanthemes_Brand::brand"/>
+		<add id="Rokanthemes_Brand::brand_group_manage" title="Manage Groups" module="Rokanthemes_Brand" sortOrder="40" parent="Rokanthemes_Brand::brand" action="rokanthemesbrand/group/index" resource="Rokanthemes_Brand::group"/>
+		<add id="Rokanthemes_Brand::configuration" title="Settings" module="Rokanthemes_Brand" sortOrder="50" parent="Rokanthemes_Brand::brand" action="adminhtml/system_config/edit/section/rokanthemesbrand" resource="Rokanthemes_Brand::config_brand"/>
+	</menu>
+</config>

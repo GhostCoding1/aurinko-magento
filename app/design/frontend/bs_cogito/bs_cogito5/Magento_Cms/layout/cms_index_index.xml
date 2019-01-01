@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+    	<referenceContainer name="page.top">
+			<container name="nav.banner" htmlTag="div" htmlClass="nav-banner" before="-">
+				<container name="nav.banner.container" htmlTag="div" >
+					<container name="nav.banner.row" htmlTag="div" >
+						<container name="nav.banner.col2" htmlTag="div" htmlClass="col-banner" after="-">
+							<block class="Rokanthemes\SlideBanner\Block\Slider" name="homepageslider" as="slideshow" after="page.top">
+								<arguments>
+									<argument name="slider_id" xsi:type="string">homepage5slider</argument>
+								</arguments>
+							</block>
+						</container>
+					</container>
+				</container>
+			</container>
+		</referenceContainer>
+		<referenceContainer name="page.top">
+            <container name="content-top-home" label="content top home" htmlTag="div" htmlClass="content-top-home">	
+				<block class="Magento\Framework\View\Element\Template" name="top_home" template="Magento_Cms::top-home.phtml"/>
+			</container>
+        </referenceContainer>
+		<move element="content.top.home" destination="page.top" after="-"/>
+    </body>
+</page>

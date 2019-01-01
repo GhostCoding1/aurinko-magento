@@ -1,0 +1,13 @@
+<?php 
+	$data = $block->getConfig();
+    $_helper = $this->helper('Rokanthemes\Themeoption\Helper\Themeconfig');
+?>
+<?php
+    $charSubset = ",latin-ext";
+    $font_sizes = "%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic";
+?>
+<?php if (isset($data['font']['custom']) && $data['font']['custom'] && $data['font']['font_family'] == 'google'): ?>
+<link rel="stylesheet" media="all" href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $data['font']['google_font_family']).$font_sizes; echo $charSubset; ?>' type='text/css' />
+<?php else: ?>
+<?php endif;?>
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $_helper->getThemeOption()?>" />

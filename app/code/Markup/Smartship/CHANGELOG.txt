@@ -1,0 +1,103 @@
+2.2.5 (7.5.2018)
+
+* Korjattu ongelma noutopistehaun postinumerossa, joka joissakin Magenton asennuksissa tuli oletuksena veron laskuun käytetystä postinumerosta
+
+2.2.4 (9.3.2018)
+
+* Lisätty uusille Parcel Connect maille (Espanja, Portugali, Bulgaria, Tanska, Slovenia ja Unkari) maksuvyöhykkeet
+* Lisätty mahdollisuus erotella Postipaketti kahdeksi eri toimitustavaksi, "Nouto Postista" ja "Nouto pakettiautomaatista"
+
+2.2.3 (6.2.2018)
+
+* Parannettu yhteensopivuutta Magento 2.1.x versioiden kanssa
+
+2.2.2 (29.1.2018)
+
+* Lisätty mahdollisuus vaihtaa noutopistettä ylläpidosta käsin
+
+2.2.1 (7.1.2018)
+
+* Päivitetty noutopistehaku käyttämään Postin uutta rajapintaa
+
+2.2.0 (12.12.2017)
+
+* Lisätty kassalle vapaa noutopistehaku postinumerolla ja mahdollisuus näyttää enemmän kuin 5 noutopistettä
+* Lisätty asiakkaan valitsema noutopiste ylläpidon tilausnäkymään
+* Muutettu seurantanumero klikattavaksi ylläpidossa (ennen pelkkä teksti linkin sijaan)
+* Lisätty mahdollisuus lähettää ennakkoavisointi sähköpostitse (saa päälle asetuksista)
+* Lisätty noutopisteen tiedot tilaus-APIin (löytyy extension_attributes->smartship_agent kohdasta)
+
+2.1.1 (24.11.2017)
+
+* Lisätty tuki 2.1 -> 2.2 päivitykselle. Aiemmin toimi ainoastaan puhtaaseen 2.1 tai 2.2 asennukseen.
+
+2.1.0 (6.11.2017)
+
+* Lisätty tuki palautuslähetysten tekemiselle normaalin lähetyksen yhteydessä.
+
+2.0.15 (2.11.2017)
+
+* Korjattu bugi, joka esti joissain tapauksissa täysin virtuaalisten tilausten tekemisen.
+
+2.0.14 (23.10.2017)
+
+* Magento 2.2.x yhteensopivuus
+
+2.0.13 (18.10.2017)
+
+* Korjattu bugi, joka esti noutopisteiden tietojen näkymisen sähköposteissa (jos lisätty niihin)
+
+2.0.12 (8.10.2017)
+
+* Poistettu lisenssiavain asetuksista (jatkossa ei enää käytössä)
+* Poistettu osavaltio pakettikorteilta (ei toiminut oikein suurimmassa osassa maita)
+
+2.0.11 (1.9.2017)
+
+* Lisätty 2. osoiterivi pakettikortille
+* Lisätty osavaltio pakettikortille
+
+2.0.10 - 10.8.2017
+
+* Lisätty mahdollisuus hinnoitella Parcel Connect toimitukset maksuvyöhykkeiden mukaan
+
+2.0.9 - 29.6.2017
+
+* Lisätty pakolliset tullaustiedot (paketin arvo, tyyppi yms.) Priority Parcel ja EMS -lähetyksille
+
+2.0.8 - 27.5.2017
+
+* Lisätty mahdollisuus liittää noutopisteen tiedot tilaussähköposteihin muuttujien avulla. Katso ohjeet.
+
+2.0.7 - 23.5.2017
+
+* Lisätty mahdollisuus hinnoitella kansainväliset toimitukset Postin maksuvyöhykkeiden mukaan yksittäisten maiden sijaan
+
+2.0.6 - 4.5.2017
+
+* Lisätty Priority Parcel kansainvälisille toimituksille
+* Lisätty EMS kansainvälisille toimituksille
+* Lisätty "Paketin sisältö" asetus, jotta pakettikortille saa tulostettua paketin sisällön kuvauksen
+* Parannettu virheilmoitusta, jos paketin / vastaanottajan tiedot ovat virheelliset.
+* Parannettu noutopistehaun yhteensopivuutta erilaisten Magento-asennusten kanssa
+
+2.0.5 - 18.3.2017
+
+* Lisätty tuki Parcel Connect palvelulle (ulkomaan lähetykset)
+* Lisätty tarkistus, että vastaanottajan maa on Suomi Postin kotimaan palveluille
+
+2.0.4 - 3.2.2017
+
+* Lisätty tuki usean kollin lähetyksille. Jatkossa kun tilaukselle tekee ylläpidosta useamman paketin "Add package" toiminnolla, niin jokaiselle ei tehdä uutta pakettikorttia, vaan pakettien lukumäärä ja painot lasketaan yhteen ja luodaan yksi lähetys usealla kollilla.
+
+2.0.3 - 10.1.2017
+
+* Lisätty tuki postiennakolle (erillisessä moduulissa)
+
+2.0.2 - 16.12.2016
+
+* Lisätty tuki ilmaisille toimituksille tilauksen hinnan perusteella
+
+2.0.1
+
+* Ensimmäinen versio

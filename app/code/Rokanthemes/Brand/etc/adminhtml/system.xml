@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Blueskytechco
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Blueskytechco.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.blueskytechco.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Blueskytechco
+ * @package    Rokanthemes_Brand
+ * @copyright  Copyright (c) 2014 Blueskytechco (http://www.blueskytechco.com/)
+ * @license    http://www.blueskytechco.com/LICENSE-1.0.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+	<system>
+		<section id="rokanthemesbrand" translate="label" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+			<class>separator-top</class>
+			<label>Brand</label>
+			<tab>rokanthemes</tab>
+			<resource>Rokanthemes_Brand::config_brand</resource>
+			<group id="general_settings" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>General Settings</label>
+				<field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Enabled</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="route" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Brand List Url</label>
+				</field>
+				<field id="url_prefix" translate="label comment" type="text" sortOrder="24" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Brand Url Prefix</label>
+				</field>
+				<field id="url_suffix" translate="label comment" type="text" sortOrder="28" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Brand Url Suffix</label>
+				</field>
+			</group>
+			<group id="product_view_page" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Brand Info On Product View Page</label>
+				<field id="enable_brand_info" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Enabled Brand Block</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="show_brand_text" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Show Brand Text</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="brand_text" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Brand Text</label>
+				</field>
+				<field id="show_brand_image" translate="label comment" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Show Brand Logo</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="show_brand_name" translate="label comment" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Show Brand Name</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+			<group id="brand_list_page" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Brand List Page</label>
+				<field id="show_brand_name" translate="label comment" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Show Brand Name</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="item_per_page" translate="label comment" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Brand Per Page</label>
+					<comment>Empty to show all item</comment>
+				</field>
+				<field id="seo_config_heading" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>SEO - Search Engine Optimization</label>
+					<frontend_model>Rokanthemes\Brand\Block\Adminhtml\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="page_title" type="text"  translate="label comment" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="20">
+					<label>Page Title</label>
+				</field>
+				<field id="meta_description" type="textarea"  translate="label comment" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="30">
+					<label>Meta Description</label>
+				</field>
+				<field id="meta_keywords" type="textarea"  translate="label comment" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="40">
+					<label>Meta Keywords</label>
+				</field>
+				<field id="grid_config_heading" translate="label comment" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Grid Layout</label>
+					<frontend_model>Rokanthemes\Brand\Block\Adminhtml\System\Config\Form\Field\Heading</frontend_model>
+				</field>
+				<field id="lg_column_item" translate="label comment" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Column on Large Desktop</label>
+					<comment><![CDATA[Large devices Desktops (≥1200px)]]></comment>
+					<source_model>Rokanthemes\Brand\Model\Config\Source\Gridcolumns</source_model>
+				</field>
+				<field id="md_column_item" translate="label comment" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Column on Desktop</label>
+					<comment><![CDATA[Medium devices Desktops (≥992px)]]></comment>
+					<source_model>Rokanthemes\Brand\Model\Config\Source\Gridcolumns</source_model>
+				</field>
+				<field id="sm_column_item" translate="label comment" type="select" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Column on Tablets</label>
+					<source_model>Rokanthemes\Brand\Model\Config\Source\Gridcolumns</source_model>
+					<comment><![CDATA[Small devices Tablets (≥768px)]]></comment>
+				</field>
+				<field id="xs_column_item" translate="label comment" type="select" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Column on Phones</label>
+					<source_model>Rokanthemes\Brand\Model\Config\Source\Gridcolumns</source_model>
+					<comment><![CDATA[Extra small devices Phones (<768px)]]></comment>
+				</field>
+			</group>
+			<group id="group_page" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Group Page</label>
+				<field id="show_brand_name" translate="label comment" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Show Brand Name</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="item_per_page" translate="label comment" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Brand Per Page</label>
+					<comment>Empty to show all item</comment>
+				</field>
+				<field id="lg_column_item" translate="label comment" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Column on Large Desktop</label>
+					<comment><![CDATA[Large devices Desktops (≥1200px)]]></comment>
+					<source_model>Rokanthemes\Brand\Model\Config\Source\Gridcolumns</source_model>
+				</field>
+				<field id="md_column_item" translate="label comment" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Column on Desktop</label>
+					<comment><![CDATA[Medium devices Desktops (≥992px)]]></comment>
+					<source_model>Rokanthemes\Brand\Model\Config\Source\Gridcolumns</source_model>
+				</field>
+				<field id="sm_column_item" translate="label comment" type="select" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Column on Tablets</label>
+					<source_model>Rokanthemes\Brand\Model\Config\Source\Gridcolumns</source_model>
+					<comment><![CDATA[Small devices Tablets (≥768px)]]></comment>
+				</field>
+				<field id="xs_column_item" translate="label comment" type="select" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number Column on Phones</label>
+					<source_model>Rokanthemes\Brand\Model\Config\Source\Gridcolumns</source_model>
+					<comment><![CDATA[Extra small devices Phones (<768px)]]></comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

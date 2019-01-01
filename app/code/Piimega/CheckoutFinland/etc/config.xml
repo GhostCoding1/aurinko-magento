@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <checkout_finland>
+                <active>0</active>
+                <password backend_model="Magento\Config\Model\Config\Backend\Encrypted"/>
+                <title>Checkout Finland</title>
+                <sort_order>0</sort_order>
+                <may_have_adult_content>0</may_have_adult_content>
+                <use_xml_mode>1</use_xml_mode>
+                <create_invoice>1</create_invoice>
+                <new_order_status>pending</new_order_status>
+                <approved_order_status>processing</approved_order_status>
+                <delayed_order_status>pending</delayed_order_status>
+                <rejected_order_status>canceled</rejected_order_status>
+                <canceled_order_status>canceled</canceled_order_status>
+                <canceled_order_redirect_url>checkout/cart</canceled_order_redirect_url>
+                <use_bank_select>0</use_bank_select>
+                <log_all_requests>1</log_all_requests>
+                <model>Piimega\CheckoutFinland\Model\Checkoutfinland</model>
+                <order_status>pending</order_status>
+            </checkout_finland>
+        </payment>
+    </default>
+</config>

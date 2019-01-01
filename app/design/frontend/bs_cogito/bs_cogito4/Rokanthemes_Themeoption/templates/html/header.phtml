@@ -1,0 +1,64 @@
+<div class="header-container">
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 col-logo">
+					<?php echo $this->getChildHtml("logo"); ?>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 col-menu">
+					<span data-action="toggle-nav" class="action nav-toggle"><span><?= /* @escapeNotVerified */ __('Toggle Nav') ?></span></span>	
+					<?php echo $this->getChildHtml("top.navigation.sections"); ?>	
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 col-cart">
+					<div class="header-top-setting pull-left">
+						<div class="icon-setting"></div>
+						<div class="setting-container">
+							<?php if ( $this->getChildHtml("top_link") ): ?>
+								<h3><?php echo __('My Account') ?></h3>
+								<?php echo $this->getChildHtml("top_link"); ?>
+							<?php endif; ?>
+							<?php if ( $this->getChildHtml("store_language") && trim($this->getChildHtml("store_language")) != '' ): ?>
+								<h3><?php echo __('Language') ?></h3>
+								<?php echo $this->getChildHtml("store_language"); ?>
+							<?php endif; ?>
+							<?php if( $this->getChildHtml("currency") ): ?>
+								<h3><?php echo __('Currency') ?></h3>
+								<?php echo $this->getChildHtml("currency"); ?>
+							<?php endif; ?>
+						</div>
+					</div>
+					<?php echo $this->getChildHtml("minicart");?>
+					<?php echo $this->getChildHtml("top.search"); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    require(['jquery'],function($){
+        $(document).ready(function($){
+        	var num = $('.header-container').outerHeight();
+			var screenWidth = $(window).width();
+			function scrollHeader() {
+				if ($(window).scrollTop() > num && screenWidth >= 768 ){  
+					$(".header").addClass("sticky");
+				}
+				else{
+					$(".header").removeClass("sticky");
+				}
+			}
+			function stickHeader() {
+				$(window).scroll(function() {
+					scrollHeader();
+				});
+				scrollHeader();
+			}
+			stickHeader();
+			$(window).resize(function(){
+				screenWidth = $(window).width();
+				stickHeader();
+			});
+		});
+    });
+</script>

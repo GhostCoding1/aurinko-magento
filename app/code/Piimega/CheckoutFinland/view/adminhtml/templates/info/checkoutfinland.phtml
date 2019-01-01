@@ -1,0 +1,16 @@
+<?php
+// @codingStandardsIgnoreFile
+/**
+ * @var $block \Piimega\CheckoutFinland\Block\Info\Checkoutfinland
+ */
+?>
+<?php echo $block->escapeHtml($block->getMethod()->getTitle()) ?>
+<?php if($operator = $block->getPaymentOperator()): ?>
+    <br/><?php /* @escapeNotVerified */ echo __('Payment operator: %1', $operator) ?>
+<?php endif; ?>
+<?php if($transactionId = $block->getCfTransactionId()): ?>
+    <br/><?php /* @escapeNotVerified */ echo __('Transaction ID: %1', $transactionId) ?>
+    <?php if($statusCode = $block->getCfStatusCode()): ?>
+        <br/><?php /* @escapeNotVerified */ echo __('Status code: %1 (%2)', $statusCode['code'], $statusCode['description']) ?>
+    <?php endif; ?>
+<?php endif; ?>

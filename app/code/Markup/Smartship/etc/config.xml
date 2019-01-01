@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <!--[Carrier's system identifier]-->
+            <smartship>
+                <title>Posti</title>
+                <!--[Carrier's activate/deactivate flag default value]-->
+                <active>0</active>
+                <!--[Send SmartShip pre-notification]-->
+                <send_enot>0</send_enot>
+                <!--[Default package contents to be printed on shipping labels]-->
+                <contents></contents>
+                <return_labels>0</return_labels>
+                <!--[Carrier's default titles]-->
+                <mode_PO2103>combine</mode_PO2103>
+                <title_PO2103>Postipaketti</title_PO2103>
+                <title_PO2103S>Nouto pakettiautomaatista</title_PO2103S>
+                <title_PO2104>Kotipaketti</title_PO2104>
+                <title_PO2102>Express</title_PO2102>
+                <title_PO2461>Pikkupaketti</title_PO2461>
+                <title_PO2711>Parcel Connect</title_PO2711>
+                <title_ITPR>Priority Parcel</title_ITPR>
+                <title_PO2017>EMS</title_PO2017>
+                <!--[Carrier's activate/deactivate flag default values]-->
+                <active_PO2103>0</active_PO2103>
+                <active_PO2103S>0</active_PO2103S>
+                <active_PO2104>0</active_PO2104>
+                <active_PO2102>0</active_PO2102>
+                <active_PO2461>0</active_PO2461>
+                <active_PO2711>0</active_PO2711>
+                <active_ITPR>0</active_ITPR>
+                <active_PO2017>0</active_PO2017>
+                <!--[Free shipping amount thresholds]-->
+                <free_shipping_subtotal_PO2103></free_shipping_subtotal_PO2103>
+                <free_shipping_subtotal_PO2103S></free_shipping_subtotal_PO2103S>
+                <free_shipping_subtotal_PO2104></free_shipping_subtotal_PO2104>
+                <free_shipping_subtotal_PO2102></free_shipping_subtotal_PO2102>
+                <free_shipping_subtotal_PO2461></free_shipping_subtotal_PO2461>
+                <free_shipping_subtotal_PO2711></free_shipping_subtotal_PO2711>
+                <free_shipping_subtotal_ITPR></free_shipping_subtotal_ITPR>
+                <free_shipping_subtotal_PO2017></free_shipping_subtotal_PO2017>
+                <!--[Carrier's model class]-->
+                <model>Markup\Smartship\Model\Carrier</model>
+                <!--[Error message displays on storefront if carrier's methods unavailable]-->
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <handling_type>F</handling_type>
+                <api_key backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <isproduction>0</isproduction>
+            </smartship>
+        </carriers>
+    </default>
+</config>

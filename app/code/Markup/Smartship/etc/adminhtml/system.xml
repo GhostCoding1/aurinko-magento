@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!--[Add carrrier to global system "carriers" group]-->
+        <section id="carriers">
+            <!--[Create group of carrier's fields with identifier]-->
+            <group id="smartship" translate="label" type="text" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
+                <!--[Carrier's label on backend]-->
+                <label>Posti SmartShip</label>
+
+                <!--[Carrier's activate field with yes/no source model for dropdown]-->
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="customer_number" translate="label" type="text" sortOrder="24" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Customer Number</label>
+                </field>
+                <field id="api_key" translate="label" type="obscure" sortOrder="26" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>API Key</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+                <field id="mode" translate="label" type="select" sortOrder="28" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Mode</label>
+                    <source_model>Magento\Shipping\Model\Config\Source\Online\Mode</source_model>
+                </field>
+
+                <field id="contents" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Package Contents</label>
+                </field>
+
+                <field id="send_enot" translate="label" type="select" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Send SmartShip Pre-notification</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="return_labels" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Print Return Labels</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="return_label_methods" translate="label" type="multiselect" sortOrder="45" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Print Return Labels For</label>
+                    <source_model>Markup\Smartship\Model\Config\Source\ShippingMethods</source_model>
+                    <depends>
+                      <field id="carriers/smartship/return_labels">1</field>
+                    </depends>
+                </field>
+
+                <field id="mode_PO2103" translate="label" type="select" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Postipaketti Mode</label>
+                    <source_model>Markup\Smartship\Model\Config\Source\PostipakettiModes</source_model>
+                </field>
+
+                <!--[Postipaketti PO2103]-->
+                <field id="title_PO2103" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Postipaketti Title</label>
+                </field>
+                <field id="active_PO2103" translate="label" type="select" sortOrder="124" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Postipaketti Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="price_PO2103" translate="label" sortOrder="128" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Postipaketti Pricing</label>
+                  <frontend_model>Markup\Smartship\Block\Adminhtml\System\Config\Form\Field\PriceMapping</frontend_model>
+                  <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+                <field id="free_shipping_subtotal_PO2103" translate="label" type="text" sortOrder="129" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Postipaketti Free Shipping Amount Threshold</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+
+                <!--[Postipaketti PO2103S (for SmartPost)]-->
+                <field id="title_PO2103S" translate="label" type="text" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Postipaketti SmartPost Title</label>
+                    <depends>
+                      <field id="carriers/smartship/mode_PO2103">separate</field>
+                    </depends>
+                </field>
+                <field id="active_PO2103S" translate="label" type="select" sortOrder="134" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Postipaketti SmartPost Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                      <field id="carriers/smartship/mode_PO2103">separate</field>
+                    </depends>
+                </field>
+                <field id="price_PO2103S" translate="label" sortOrder="138" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Postipaketti SmartPost Pricing</label>
+                  <frontend_model>Markup\Smartship\Block\Adminhtml\System\Config\Form\Field\PriceMapping</frontend_model>
+                  <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                  <depends>
+                    <field id="carriers/smartship/mode_PO2103">separate</field>
+                  </depends>
+                </field>
+                <field id="free_shipping_subtotal_PO2103S" translate="label" type="text" sortOrder="139" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Postipaketti SmartPost Free Shipping Amount Threshold</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                  <depends>
+                    <field id="carriers/smartship/mode_PO2103">separate</field>
+                  </depends>
+                </field>
+
+                <!--[Kotipaketti PO2104]-->
+                <field id="title_PO2104" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Kotipaketti Title</label>
+                </field>
+                <field id="active_PO2104" translate="label" type="select" sortOrder="144" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Kotipaketti Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="price_PO2104" translate="label" sortOrder="148" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Kotipaketti Pricing</label>
+                  <frontend_model>Markup\Smartship\Block\Adminhtml\System\Config\Form\Field\PriceMapping</frontend_model>
+                  <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+                <field id="free_shipping_subtotal_PO2104" translate="label" type="text" sortOrder="149" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Kotipaketti Free Shipping Amount Threshold</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+
+                <!--[Express 2102]-->
+                <field id="title_PO2102" translate="label" type="text" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Express Title</label>
+                </field>
+                <field id="active_PO2102" translate="label" type="select" sortOrder="154" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Express Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="price_PO2102" translate="label" sortOrder="158" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Express Pricing</label>
+                  <frontend_model>Markup\Smartship\Block\Adminhtml\System\Config\Form\Field\PriceMapping</frontend_model>
+                  <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+                <field id="free_shipping_subtotal_PO2102" translate="label" type="text" sortOrder="159" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Express Free Shipping Amount Threshold</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+
+                <!--[Pikkupaketti PO2461]-->
+                <field id="title_PO2461" translate="label" type="text" sortOrder="160" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pikkupaketti Title</label>
+                </field>
+                <field id="active_PO2461" translate="label" type="select" sortOrder="164" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Pikkupaketti Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="price_PO2461" translate="label" sortOrder="168" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Pikkupaketti Pricing</label>
+                  <frontend_model>Markup\Smartship\Block\Adminhtml\System\Config\Form\Field\PriceMapping</frontend_model>
+                  <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+                <field id="free_shipping_subtotal_PO2461" translate="label" type="text" sortOrder="169" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Pikkupaketti Free Shipping Amount Threshold</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+
+                <!--[Parcel Connect PO2711]-->
+                <field id="title_PO2711" translate="label" type="text" sortOrder="170" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Parcel Connect Title</label>
+                </field>
+                <field id="active_PO2711" translate="label" type="select" sortOrder="174" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Parcel Connect Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="price_PO2711" translate="label" sortOrder="178" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Parcel Connect Pricing</label>
+                  <frontend_model>Markup\Smartship\Block\Adminhtml\System\Config\Form\Field\PriceCountryMapping</frontend_model>
+                  <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+                <field id="free_shipping_subtotal_PO2711" translate="label" type="text" sortOrder="179" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Parcel Connect Free Shipping Amount Threshold</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+
+                <!--[Priority Parcel ITPR]-->
+                <field id="title_ITPR" translate="label" type="text" sortOrder="180" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Priority Parcel Title</label>
+                </field>
+                <field id="active_ITPR" translate="label" type="select" sortOrder="184" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Priority Parcel Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="price_ITPR" translate="label" sortOrder="188" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Priority Parcel Pricing</label>
+                  <frontend_model>Markup\Smartship\Block\Adminhtml\System\Config\Form\Field\PriceCountryMapping</frontend_model>
+                  <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+                <field id="free_shipping_subtotal_ITPR" translate="label" type="text" sortOrder="189" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Priority Parcel Free Shipping Amount Threshold</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+
+                <!--[EMS PO2017]-->
+                <field id="title_PO2017" translate="label" type="text" sortOrder="190" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>EMS Title</label>
+                </field>
+                <field id="active_PO2017" translate="label" type="select" sortOrder="194" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>EMS Enabled for Checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="price_PO2017" translate="label" sortOrder="198" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>EMS Pricing</label>
+                  <frontend_model>Markup\Smartship\Block\Adminhtml\System\Config\Form\Field\PriceCountryMapping</frontend_model>
+                  <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+                <field id="free_shipping_subtotal_PO2017" translate="label" type="text" sortOrder="199" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>EMS Free Shipping Amount Threshold</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+
+                <!--[Carrier's displayed error message on storefront if unavailable]-->
+                <field id="specificerrmsg" translate="label" type="textarea" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Displayed Error Message</label>
+                </field>
+                <!--[Carrier's show method if unavailable with error message activate field]-->
+                <field id="showmethod" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Show Method if Not Applicable</label>
+                    <frontend_class>shipping-skip-hide</frontend_class>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <!--[Carrier's sort order]-->
+                <field id="sort_order" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Sort Order</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

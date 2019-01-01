@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Blueskytechco
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Blueskytechco.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.blueskytechco.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Blueskytechco
+ * @package    Rokanthemes_Brand
+ * @copyright  Copyright (c) 2014 Blueskytechco (http://www.blueskytechco.com/)
+ * @license    http://www.blueskytechco.com/LICENSE-1.0.html
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="content">
+			<block class="Rokanthemes\Brand\Block\Brandpage" name="rokanthemesbrand.list">
+				<block class="Rokanthemes\Brand\Block\Toolbar" name="rokanthemesbrand_toolbar" template="Rokanthemes_Brand::toolbar.phtml">
+					<block class="Magento\Theme\Block\Html\Pager" name="brand_list_toolbar_pager"/>
+				</block>
+			</block>
+		</referenceContainer>
+		<referenceContainer name="sidebar.main">
+            <block class="Rokanthemes\Brand\Block\GroupList" name="group_list" template="Rokanthemes_Brand::grouplist.phtml"/>
+        </referenceContainer>
+		<referenceContainer name="sidebar.additional" remove="true"/>
+	</body>
+</page>

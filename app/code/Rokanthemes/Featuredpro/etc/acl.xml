@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Rokanthemes_RokanBase::rokanbase" title="Rokanthemes" translate="title" sortOrder="30">
+                    <resource id="Rokanthemes_RokanBase::rokanbase_setting" title="Configuration" translate="title" sortOrder="10">
+                        <resource id="Rokanthemes_Featuredpro::rokanbase_featuredpro" title="Featured Product" translate="title" sortOrder="80" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

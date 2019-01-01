@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Blueskytechco
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Blueskytechco.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.blueskytechco.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Blueskytechco
+ * @package    Rokanthemes_Brand
+ * @copyright  Copyright (c) 2014 Blueskytechco (http://www.blueskytechco.com/)
+ * @license    http://www.blueskytechco.com/LICENSE-1.0.html
+ */
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget id="rokanthemes_brand_list" class="Rokanthemes\Brand\Block\Widget\Brandlist">
+		<label translate="true">Rokanthemes Brand Slide</label>
+		<description translate="true">Get brand list slide</description>
+		<parameters>
+			<parameter name="widget_title" xsi:type="text" visible="true" sort_order="0">
+				<label translate="true">Title</label>
+			</parameter>
+			<parameter name="show_brand_name" xsi:type="select"  visible="true" sort_order="17" source_model="Magento\Config\Model\Config\Source\Yesno">
+				<label translate="true">Show Brand Name</label>
+			</parameter>
+			<parameter name="brand_groups" xsi:type="multiselect"  visible="true" sort_order="20" source_model="Rokanthemes\Brand\Model\Source\Brandgrouplist">
+				<label translate="true">Brand Group</label>
+			</parameter>
+			<parameter name="number_item" required="true" xsi:type="text"  visible="true" sort_order="30">
+				<label translate="true">Number of Brand to Display</label>
+				<value>12</value>
+			</parameter>
+			<parameter name="default_item" xsi:type="text" visible="true" sort_order="40">
+				<label translate="true">Items Default</label>
+				<value>5</value>
+			</parameter>
+			<parameter name="destop_item" xsi:type="text" visible="true" sort_order="50">
+				<label translate="true">Items On Desktop</label>
+				<value>5</value>
+			</parameter>
+			<parameter name="small_destop_item" xsi:type="text" visible="true" sort_order="50">
+				<label translate="true">Items On Desktop Small</label>
+				<value>4</value>
+			</parameter>
+			<parameter name="tablet_item" xsi:type="text" visible="true" sort_order="50">
+				<label translate="true">Items On Tablet</label>
+				<value>3</value>
+			</parameter>
+			<parameter name="mobile_item" xsi:type="text" visible="true" sort_order="60">
+				<label translate="true">Items On Mobile</label>
+				<value>1</value>
+			</parameter>
+			<parameter name="show_next_back_control" xsi:type="select"  visible="true" sort_order="70" source_model="Magento\Config\Model\Config\Source\Yesno">
+				<label translate="true">Show Next/Back Control</label>
+			</parameter>
+			<parameter name="show_navigation_control" xsi:type="select"  visible="true" sort_order="80" source_model="Magento\Config\Model\Config\Source\Yesno">
+				<label translate="true">Show Navigation Control</label>
+			</parameter>
+			<parameter name="auto_play_control" xsi:type="select"  visible="true" sort_order="90" source_model="Magento\Config\Model\Config\Source\Yesno">
+				<label translate="true">Auto Play</label>
+			</parameter>
+		</parameters>
+	</widget>
+</widgets>

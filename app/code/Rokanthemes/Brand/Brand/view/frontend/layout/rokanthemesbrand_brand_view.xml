@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Blueskytechco
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Blueskytechco.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.blueskytechco.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Blueskytechco
+ * @package    Rokanthemes_Brand
+ * @copyright  Copyright (c) 2014 Blueskytechco (http://www.blueskytechco.com/)
+ * @license    http://www.blueskytechco.com/LICENSE-1.0.html
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+        <referenceContainer name="columns.top">
+			<container name="brand.view.container.bootrap" htmlTag="div" htmlClass="container" after="-">
+				<container name="brand.view.row.bootrap" htmlTag="div" htmlClass="row">
+					<container name="brand.view.col.bootrap" htmlTag="div" htmlClass="col-md-12">
+						<container name="brand.view.container" htmlTag="div" htmlClass="brand-view">
+							<block class="Rokanthemes\Brand\Block\Brand\View" name="brand.image" template="Rokanthemes_Brand::brand/image.phtml"/>
+							<block class="Rokanthemes\Brand\Block\Brand\View" name="brand.description" template="Rokanthemes_Brand::brand/description.phtml"/>
+						</container>
+					</container>
+				</container>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="sidebar.main">
+            <block class="Rokanthemes\Brand\Block\GroupList" name="group_list" template="Rokanthemes_Brand::grouplist.phtml"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Rokanthemes\Brand\Block\Brand\View" name="brand.products" template="Rokanthemes_Brand::brand/view.phtml">
+                <block class="Rokanthemes\Brand\Block\Brand\Product\ListProduct" name="brand.products.list" as="product_list" template="Magento_Catalog::product/list.phtml">
+                    <container name="category.product.list.additional" as="additional" />
+                    <block class="Magento\Framework\View\Element\RendererList" name="category.product.type.details.renderers" as="details.renderers">
+                        <block class="Magento\Framework\View\Element\Template" as="default"/>
+                    </block>
+                    <block class="Magento\Catalog\Block\Product\ProductList\Toolbar" name="product_list_toolbar" template="Magento_Catalog::product/list/toolbar.phtml">
+                        <block class="Magento\Theme\Block\Html\Pager" name="product_list_toolbar_pager"/>
+                    </block>
+                    <action method="setToolbarBlockName">
+                        <argument name="name" xsi:type="string">product_list_toolbar</argument>
+                    </action>
+                </block>
+            </block>
+            <block class="Magento\Cookie\Block\RequireCookie" name="require-cookie" template="Magento_Cookie::require_cookie.phtml">
+                <arguments>
+                    <argument name="triggers" xsi:type="array">
+                        <item name="compareProductLink" xsi:type="string">.action.tocompare</item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+		<referenceContainer name="sidebar.additional" remove="true"/>
+    </body>
+</page>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+		<add id="Rokanthemes_Categorytab::test_config" title="Category Tab" module="Rokanthemes_Categorytab" sortOrder="70" parent="Rokanthemes_RokanBase::rokanbase_setting" resource="Rokanthemes_Categorytab::test_config" action="adminhtml/system_config/edit/section/categorytab" />
+    </menu>
+</config>

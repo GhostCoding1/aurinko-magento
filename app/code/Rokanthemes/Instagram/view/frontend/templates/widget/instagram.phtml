@@ -1,0 +1,67 @@
+<?php
+/**
+ * Rokanthemes Infotech
+ * Rokanthemes Instagram Extension
+ * 
+ * @category   Rokanthemes
+ * @package    Rokanthemes_Instagram
+ * @copyright  Copyright © 2006-2016 Rokanthemes (https://www.rokanthemesinfotech.com)
+ * @license    https://www.rokanthemesinfotech.com/magento-extension-license/
+ */
+$helper = $this->helper('\Rokanthemes\Instagram\Helper\Data');
+$enable = $helper->getConfig('instagramsection/instagramgroup/active');
+$userId = $helper->getConfig('instagramsection/instagramgroup/userid');
+$accessToken = $helper->getConfig('instagramsection/instagramgroup/accesstoken');
+$imageResolution = $helper->getConfig('instagramsection/instagramgroup/selectimageresolution');
+$imageNumber = $this->getData('numberimage');
+?>
+
+<?php
+if ($enable) {
+    ?>
+    <div class="cp-ftitle">
+        <h3><?php echo $this->getData('title'); ?></h3>
+        <a class="visible-xs cp-toggle collapsed" data-toggle="collapse" data-target="#cpcolumninstagram">
+            <span></span>
+        </a>
+    </div>
+    <div id="cpcolumninstagram" class="cp-fcontent">
+        <?php
+        $url = 'https://api.instagram.com/v1/users/' . $userId . '/media/recent/?access_token=' . $accessToken;
+        $args = stream_context_create(array('http' => array('timeout' => 2500,)));
+        //for Live server
+        $instagramFeedsData = file_get_contents($url, false, $args);
+        //for Local Server
+//        $instagramFeedsData = $helper->getInstangramData($url);
+
+        $instagramFeeds = json_decode($instagramFeedsData);
+
+        $instangramData = $instagramFeeds->data;
+        $count = 1;
+        foreach ($instangramData as $instagramFeed) {
+
+            if ($imageNumber < $count) {
+                break;
+            }
+            $instagramImage = $instagramFeed->images->$imageResolution->url;
+            $count++;
+            ?>
+
+            <?php
+            $caption_text = 'Instagram';
+            if (is_object($instagramFeed->caption)) {
+                $caption_text = $instagramFeed->caption->text;
+            }
+            ?>
+            <div class="instangram-feed">
+
+                <a href ="<?php echo $instagramFeed->link; ?>" target="_blank">
+                    <img src="<?php echo $instagramImage; ?>" title="<?php echo $caption_text; ?>" alt="<?php echo $caption_text; ?>"/>
+                </a>
+               
+            </div>
+            <?php
+        }
+    }
+    ?>
+</div>

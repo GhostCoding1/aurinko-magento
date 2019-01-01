@@ -1,0 +1,12 @@
+<?php
+// @codingStandardsIgnoreFile
+/**
+ * @var $block \Piimega\CheckoutFinland\Block\Info\Checkoutfinland
+ */
+?>
+<?php echo $block->escapeHtml($block->getMethod()->getTitle()) ?>
+{{pdf_row_separator}}
+<?php if($operator = $block->getPaymentOperator()): ?>
+    <?php echo __('Payment operator: %1', $operator) ?>
+    {{pdf_row_separator}}
+<?php endif; ?>
